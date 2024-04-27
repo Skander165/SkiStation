@@ -17,7 +17,7 @@
         <java.version>1.8</java.version>
     </properties>
 
-<profiles>
+    <profiles>
         <profile>
             <id>dev</id>
             <!-- Configuration specific to the development profile -->
@@ -43,6 +43,7 @@
             </properties>
         </profile>
     </profiles>
+    
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -52,7 +53,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<dependency>
+	<dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
@@ -93,8 +94,8 @@
                     </excludes>
                 </configuration>
             </plugin>
-<plugin>
-                <groupId>org.jacoco</groupId>
+	    <plugin>
+        	<groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
                 <executions>
